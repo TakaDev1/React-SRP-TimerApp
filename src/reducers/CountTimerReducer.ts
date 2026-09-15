@@ -5,7 +5,7 @@ const initialState: CountTimerType = { count: 0, isRunning: false };
 const CountTimerReducer = (state: CountTimerType, action: CountTimerAction): CountTimerType => {
   switch (action.type) {
     case "START":
-      return { ...state, isRunning: !state.isRunning };
+      return { ...state, isRunning: true };
     case "STOP":
       return { ...state, isRunning: false };
     case "RESET":
